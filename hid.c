@@ -8,7 +8,7 @@
 #define parity(n) __builtin_parity((uint64_t)n)
 #define strcp(x, y, z) memcpy(x, y, z); x[z] = '\0';
 
-static inline void d2b(uint64_t x, char *b, uint16_t c)
+static inline void d2b(uint64_t x, char *b, uint8_t c)
 {
   register uint8_t i;
   for (i = c; i--;)
